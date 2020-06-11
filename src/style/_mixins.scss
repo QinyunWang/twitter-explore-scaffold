@@ -9,4 +9,13 @@
   background-color: $bg-color;
   border: 1px solid $primary-color;
   padding: 5px $padding-x;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
 }

@@ -1,11 +1,16 @@
 header {
+  height: 70px;
+  border-bottom: 1px solid $border-color;
+}
+
+nav {
   @extend .menu;
   position: relative;
   top: 15px;
-  & li:first-child {
+  & li:first-child > button {
     @include button($body-bg, $primary-color, 30px);
   }
-  & li:last-child {
+  & li:last-child > button {
     @include button($primary-color, $white, 30px);
   }
 }
