@@ -20,6 +20,7 @@ body {
 
 ul,
 ol {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -42,5 +43,6 @@ button {
 
 h1 {
   color: $heading-color;
+  font-family: $font-family-base;
   margin: 0;
 }
