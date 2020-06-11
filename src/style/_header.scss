@@ -2,4 +2,10 @@ header {
   @extend .menu;
   position: relative;
   top: 15px;
+  & li:first-child {
+    @include button($body-bg, $primary-color, 30px);
+  }
+  & li:last-child {
+    @include button($primary-color, $white, 30px);
+  }
 }
