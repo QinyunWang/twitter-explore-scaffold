@@ -31,9 +31,11 @@ ol {
 }
 
 a {
-  color: $link-color;
-
+  color: $primary-color;
+  padding: 10px 0;
+  width: 90%;
   &:hover {
+    cursor: pointer;
     color: $link-hover-color;
   }
 }

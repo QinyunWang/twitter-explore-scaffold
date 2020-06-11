@@ -5,11 +5,9 @@
 @import "extends";
 
 .card {
+  @extend .vertical-box;
   width: 25%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   > h1 {
     font-size: 1.5em;
   }
@@ -23,6 +21,7 @@
   }
   > input {
     width: 100%;
+    font-size: 1em;
     color: $gray-light;
     background-color: $body-bg;
     border: none;
@@ -31,5 +30,18 @@
     &:focus {
       outline: none;
     }
+  }
+}
+
+#button-group {
+  @extend .vertical-box;
+  width: 90%;
+  > button:first-child {
+    @include button($body-bg, $primary-color);
+    width: 100%;
+  }
+  > button:last-child {
+    @include button($primary-color, $white);
+    width: 100%;
   }
 }

@@ -8,9 +8,9 @@ nav {
   position: relative;
   top: 15px;
   & li:first-child > button {
-    @include button($body-bg, $primary-color, 30px);
+    @include button($body-bg, $primary-color);
   }
   & li:last-child > button {
-    @include button($primary-color, $white, 30px);
+    @include button($primary-color, $white);
   }
 }
